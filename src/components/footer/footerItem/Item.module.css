@@ -1,0 +1,19 @@
+.item__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    height: auto;
+    font-size: 16px;
+}
+
+.item__content h3{
+    color: #616D8D;
+    margin: 0;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

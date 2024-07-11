@@ -1,0 +1,103 @@
+.footer{
+    position: absolute;
+    top:80vh ;
+    height: 444px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    color: white;
+    font-family: "IBM Plex Sans";
+    /* background: radial-gradient(at 50% 0%,  #08102700 0%, #1C64F280 50%, #121825); */
+    background: linear-gradient(0deg, #121825, #121825), radial-gradient(51.67% 103.33% at 50% -3.33%, rgba(28, 100, 242, 0.5) 0%, rgba(8, 16, 39, 0) 70.32%);
+    animation: apear 0.8s forwards;
+}
+
+.footer__wrapper{
+    margin-top: 64px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__section{
+    display: grid;
+    height: 192px;
+}
+
+.text__information{
+    display: grid;
+    margin-bottom: 5px;
+}
+
+.website__section{
+    display: flex;
+}
+
+@keyframes apear {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media ((min-width:500px) and (max-width:1320px)){
+    .footer{
+        position: absolute;
+        top:80vh ;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+    }
+    
+    .footer__wrapper{
+        margin-top: 64px;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 64px;
+    }
+    
+    .company__section{
+        display: grid;
+        height: 192px;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+}
+
+@media ((min-width:320px) and (max-width:500px)){
+    .footer{
+        position: absolute;
+        top:80vh ;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+    }
+    
+    .footer__wrapper{
+        margin-top: 64px;
+        width: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin-bottom: 64px;
+        gap: 32px;
+    }
+    
+    .company__section{
+        display: grid;
+        height: 192px;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+}
