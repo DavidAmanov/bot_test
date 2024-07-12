@@ -7,7 +7,7 @@
 }
 
 .banner__wrapper{
-    margin-top: 125px;
+    padding-top: 125px;
     width: 100%;
     padding-right: 15%;
     padding-left: 15%;
@@ -15,8 +15,8 @@
     gap: 30px;
     align-items: center;
     height: 80%;
-    background: radial-gradient(at 60% 27%, #1C64F2 -30%, transparent 30%), 
-                radial-gradient(at 80% 20% , #D41CF2 -70%, transparent 20%);
+    background: radial-gradient(at 55% 33%, #1C64F2 -30%, transparent 30%), 
+                radial-gradient(at 70% 27% , #D41CF2 -70%, transparent 30%);
 }
 
 
