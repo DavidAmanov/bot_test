@@ -1,6 +1,6 @@
 .footer{
     position: absolute;
-    top:80vh ;
+    top:auto ;
     height: 444px;
     width: 100%;
     display: flex;
@@ -8,8 +8,8 @@
     justify-content: center;
     color: white;
     font-family: "IBM Plex Sans";
-    /* background: radial-gradient(at 50% 0%,  #08102700 0%, #1C64F280 50%, #121825); */
-    background: linear-gradient(0deg, #121825, #121825), radial-gradient(51.67% 103.33% at 50% -3.33%, rgba(28, 100, 242, 0.5) 0%, rgba(8, 16, 39, 0) 70.32%);
+    background: radial-gradient(at 50% 0%,  #1C64F280 -50%, #081027);
+    background-color: #121825;
     animation: apear 0.8s forwards;
 }
 
@@ -46,7 +46,7 @@
 @media ((min-width:500px) and (max-width:1320px)){
     .footer{
         position: absolute;
-        top:80vh ;
+        top:auto ;
         height: auto;
         width: 100%;
         display: flex;
@@ -75,7 +75,7 @@
 @media ((min-width:320px) and (max-width:500px)){
     .footer{
         position: absolute;
-        top:80vh ;
+        top:auto ;
         height: auto;
         width: 100%;
         display: flex;

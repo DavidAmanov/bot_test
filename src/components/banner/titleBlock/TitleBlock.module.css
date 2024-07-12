@@ -1,0 +1,41 @@
+.titleBlock__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.titleBlock__wrapper h1{
+    font-size: 46px;
+    margin: 0;
+}
+
+.titleBlock__wrapper span {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media ((min-width:500px) and (max-width:1320px)){
+    .titleBlock__wrapper{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media ((min-width:320px) and (max-width:500px)){
+    .titleBlock__wrapper{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .titleBlock__wrapper h1{
+        font-size: 28px;
+    }
+    .titleBlock__wrapper span {
+        font-size: 14px;
+    }
+}

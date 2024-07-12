@@ -1,0 +1,51 @@
+.banner{
+    height: 902px;
+    background-image: url('../../img/markup.svg');
+    background-color: #0E0C15;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner__wrapper{
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    height: 80%;
+    background: radial-gradient(at 60% 27%, #1C64F2 -30%, transparent 30%), 
+                radial-gradient(at 80% 20% , #D41CF2 -70%, transparent 20%);
+}
+
+
+@media ((min-width:500px) and (max-width:1320px)){
+    .banner{
+        height: auto;
+    }
+    .banner__wrapper{
+        width: 90%;
+        display: grid;
+        gap: 30px;
+        align-items: center;
+        margin-top: 5%;
+        background: radial-gradient(at 60% 50%, #1C64F2 -30%, transparent 30%), 
+                    radial-gradient(at 80% 45% , #D41CF2 -70%, transparent 20%);
+    }
+}
+
+@media ((min-width:320px) and (max-width:500px)){
+    .banner{
+        height: auto;
+    }
+    .banner__wrapper{
+        width: 90%;
+        display: grid;
+        gap: 30px;
+        align-items: center;
+        margin-top: 5%;
+        background: radial-gradient(at 60% 50%, #1C64F2 -30%, transparent 30%), 
+        radial-gradient(at 80% 45% , #D41CF2 -70%, transparent 20%);
+    }
+}

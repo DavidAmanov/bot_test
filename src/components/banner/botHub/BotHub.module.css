@@ -1,0 +1,210 @@
+.content__wrapper{
+    display: grid;
+    height: 592px;
+    width: 60%;
+    border-radius: 24px;
+    border: solid 1px #363F54;
+    background: radial-gradient(circle at bottom left, #1C64F2 -50%, transparent 20%), /* First gradient */
+                radial-gradient(at 15% 100% , #D41CF2 -60%, transparent 20%);
+    background-color: #121825;
+}
+
+.chat__name{
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #374151;
+    padding-bottom: 17px;
+}
+
+.chat__name__avatar{
+    display: flex;
+    gap:16px;
+    margin-left: 21px;
+}
+
+.chat__name__avatar__text{
+    display: grid;
+}
+.chat__name__avatar__text h4{
+    margin: 0;
+}
+
+.chat__name__avatar__text span{
+    font-size: 14px;
+    color: #616D8D;
+}
+
+.chat__name__checkbox{
+    font-size: 14px;
+    margin-right: 21px;
+    gap:16px;
+    display: flex;
+    align-items: center;
+}
+
+.chat__name__checkbox input{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.chat__field{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+}
+
+.gemini__message{
+    margin-top: 5%;
+    gap: 8px;
+    width: 100%;
+    display: grid;
+    margin-left: 21px;
+}
+.gemini__message span {
+    margin-left: 56px;
+}
+
+.gemini__message__text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+.gemini__message__text span{
+    display: flex;
+    justify-content: start;
+    padding-left: 36px;
+    align-items: center;
+    background-color: #313E62;
+    height: 50px;
+    width: 338px;
+    margin: 0;
+    border-radius: 10px 10px 10px 0;
+}
+
+.user__message{
+    margin-top: 10%;
+    padding-right: 21px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    align-items: center;
+}
+
+.user__message span{
+    display: flex;
+    justify-content: end;
+    padding-right: 36px;
+    align-items: center;
+    background-color: #1C64F2;
+    height: 50px;
+    width: 116px;
+    margin: 0;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.input__field{
+    margin-top: 20%;
+    height: 66px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5%;
+}
+
+.input__wrapper{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #313E62;
+    background-color: #121825;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.input__wrapper input {
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    color: #616D8D;
+    font-size: 14px;
+    font-family: "IBM Plex Sans";
+}
+
+.input__wrapper input:focus{
+    outline: transparent;
+}
+
+@media ((min-width:500px) and (max-width:1320px)){
+    .content__wrapper{
+        width: 100%;
+    }
+    .input__field{
+        margin-top: auto;
+    }
+}
+
+@media ((min-width:320px) and (max-width:500px)){
+    .content__wrapper{
+        width: 100%;
+    }
+    .chat__name{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .chat__name__avatar img {
+        width: 36px;
+        height: 36px;
+    }
+    .chat__name__avatar__text h4{
+        font-size: 14px;
+    }
+    
+    .chat__name__avatar__text span{
+        font-size: 12px;
+    }
+
+    .chat__name__checkbox{
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 12px;
+        margin-left: 21px;
+        margin-top: 21px;
+    }
+
+    .chat__name__checkbox input{
+        margin: 0;
+        width: 20px;
+        height: 20px;
+    }
+    .gemini__message{
+        margin-top: 5%;
+        gap: 8px;
+    }
+    .gemini__message__text{
+        width: 90%;
+    }
+    .gemini__message__text span{
+        height: 50px;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .user__message{
+        margin-top: 10%;
+    }
+    .input__field{
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+    .input__wrapper{
+        width: 80%;
+    }
+}
