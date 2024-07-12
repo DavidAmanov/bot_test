@@ -1,13 +1,13 @@
 .banner{
-    height: 902px;
-    background-image: url('../../img/markup.svg');
-    background-color: #0E0C15;
+    height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 .banner__wrapper{
+    margin-top: 125px;
     width: 100%;
     padding-right: 15%;
     padding-left: 15%;
@@ -25,6 +25,8 @@
         height: auto;
     }
     .banner__wrapper{
+        padding-right: 5%;
+        padding-left: 5%;
         width: 90%;
         display: grid;
         gap: 30px;
@@ -40,6 +42,8 @@
         height: auto;
     }
     .banner__wrapper{
+        padding-right: 5%;
+        padding-left: 5%;
         width: 90%;
         display: grid;
         gap: 30px;

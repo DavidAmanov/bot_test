@@ -8,7 +8,7 @@
     justify-content: center;
     color: white;
     font-family: "IBM Plex Sans";
-    background: radial-gradient(at 50% 0%,  #1C64F280 -50%, #081027);
+    background: radial-gradient(at 50% 0%,  #1C64F280 -50%, transparent 30%);
     background-color: #121825;
     animation: apear 0.8s forwards;
 }

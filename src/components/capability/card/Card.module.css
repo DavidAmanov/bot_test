@@ -1,0 +1,15 @@
+.card{
+    background: radial-gradient(at 0% 10%,  #1C64F280 -70%, transparent 40%);;
+    background-color: #121825;
+    border-radius: 12px;
+    border: solid 1px #1C64F200;
+    height: 100%;
+}
+
+.card__wrapper{
+    padding: 5px;
+}
+.card__wrapper h3{
+    font-size: 22px;
+    margin: 0%;
+}
