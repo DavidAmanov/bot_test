@@ -1,6 +1,6 @@
 .content__wrapper{
     display: grid;
-    height: 592px;
+    min-height: 592px;
     width: 60%;
     border-radius: 24px;
     border: solid 1px #363F54;
@@ -51,19 +51,28 @@
 }
 
 .chat__field{
-    margin-top: 2%;
-    width: 100%;
+    overflow-y: auto;
+    max-height: 700px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: auto;
+    margin-bottom: 2%;
+    justify-content: flex-end;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.chat__field::-webkit-scrollbar {
+    width: 0;
 }
 
 .gemini__message{
     margin-top: 5%;
     gap: 8px;
     width: 100%;
-    display: grid;
-    margin-left: 21px;
+    display: flex;
+    flex-direction: column;
+    animation: showChatMessages 0.5s ease-in-out forwards;
 }
 .gemini__message span {
     margin-left: 56px;
@@ -81,9 +90,11 @@
     padding-left: 36px;
     align-items: center;
     background-color: #313E62;
-    height: 50px;
-    width: 338px;
+    min-height: 50px;
+    min-width: 200px;
+    max-width: 338px;
     margin: 0;
+    padding: 10px;
     border-radius: 10px 10px 10px 0;
 }
 
@@ -92,25 +103,28 @@
     padding-right: 21px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
     gap: 16px;
     align-items: center;
+    animation: showChatMessages 0.5s ease-in-out forwards;
 }
 
 .user__message span{
     display: flex;
-    justify-content: end;
-    padding-right: 36px;
+    justify-content: flex-end;
+    min-width: 200px;
+    max-width: 338px;
+    padding: 10px;
     align-items: center;
     background-color: #1C64F2;
-    height: 50px;
+    min-height: 50px;
     width: 116px;
     margin: 0;
     border-radius: 10px 10px 0px 10px;
 }
 
 .input__field{
-    margin-top: 20%;
+    margin-top: auto;
     height: 66px;
     width: 100%;
     display: flex;
@@ -194,7 +208,7 @@
         width: 90%;
     }
     .gemini__message__text span{
-        height: 50px;
+        min-height: 50px;
         width: 100%;
         padding-left: 10px;
     }
@@ -209,3 +223,14 @@
         width: 80%;
     }
 }
+
+@keyframes showChatMessages {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

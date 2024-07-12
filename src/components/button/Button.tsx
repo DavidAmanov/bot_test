@@ -2,7 +2,7 @@ import ButtonModule from './Button.module.css'
 interface ButtonProp{
     img?: string
     text?: string
-    onClick1?: ()=>void
+    onClick1?: (e: React.MouseEvent<HTMLButtonElement>)=>void
     width: string
 }
 
